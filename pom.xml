@@ -75,7 +75,7 @@
     </repositories>
 
 	<build>
-		<finalName>SpringMVC</finalName>
+		<finalName>akka-demo</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
