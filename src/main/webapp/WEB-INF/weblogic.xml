@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90" xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bea.com/ns/weblogic/90 http://www.bea.com/ns/weblogic/90/weblogic-web-app.xsd http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <description>Akka Web Application</description>
+
+    <session-descriptor>
+        <timeout-secs>1800</timeout-secs>
+        <invalidation-interval-secs>60</invalidation-interval-secs>
+        <url-rewriting-enabled>false</url-rewriting-enabled>
+        <sharing-enabled>true</sharing-enabled>
+    </session-descriptor>
+
+    <jsp-descriptor>
+        <precompile>false</precompile>
+        <precompile-continue>false</precompile-continue>
+        <backward-compatible>true</backward-compatible>
+    </jsp-descriptor>
+
+    <container-descriptor>
+        <prefer-web-inf-classes>true</prefer-web-inf-classes>
+    </container-descriptor>
+
+    <charset-params>
+        <input-charset>
+            <resource-path>/*</resource-path>
+            <java-charset-name>UTF-8</java-charset-name>
+        </input-charset>
+    </charset-params>
+
+    <context-root>/akka-demo</context-root>
+
+</weblogic-web-app>
